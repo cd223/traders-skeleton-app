@@ -1,0 +1,20 @@
+<h1>Trader List</h1>
+<input [(ngModel)]="threshold">
+<table [ngStyle]="traderItemStyle">
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Desk Number</th>
+        <th>Amount Traded</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let trader of traders | tradedAbove: threshold">
+            <td>{{trader.id}}</td>
+            <td>{{trader.name}}</td>
+            <td>{{trader.location}}</td>
+            <td>{{trader.deskNumber}}</td>
+            <td>{{trader.valueTraded | currency: trader.currency }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,20 @@
+{
+  "traders": [
+    {
+      "id": "1",
+      "name": "Chris",
+      "location": "London",
+      "deskNumber": 123,
+      "valueTraded": 120,
+      "currency": "USD"
+    },
+    {
+      "name": "Anna",
+      "location": "Glasgow",
+      "deskNumber": "3894",
+      "currency": "GBP",
+      "valueTraded": "450",
+      "id": "-kQj8-G"
+    }
+  ]
+}

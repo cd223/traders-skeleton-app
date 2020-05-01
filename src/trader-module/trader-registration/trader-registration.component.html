@@ -1,0 +1,19 @@
+<h1>Trader Registration</h1>
+<form #form="ngForm" (ngSubmit)="register(form)">
+    <label>Name</label>
+    <input type="text" name="name" ngModel>
+
+    <label>Location</label>
+    <input type="text" name="location" ngModel>
+
+    <label>Desk Number</label>
+    <input type="text" name="deskNumber" ngModel>
+
+    <label>Value Traded</label>
+    <input type="text" name="valueTraded" ngModel>
+
+    <label>Currency</label>
+    <input type="text" name="currency" ngModel>
+
+    <button type="submit">Sign Up</button>
+</form>

@@ -1,0 +1,15 @@
+<nav>
+    <a [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/trader-list']">View Traders</a>
+    <a [routerLink]="['/add-trader']">Add Trader</a>
+</nav>
+
+<b>Watching the observables!</b>
+<ul>
+    <li>Status: {{ status }}</li>
+    <li>Value: {{ newValue }}</li>
+</ul>
+
+<button (click)="startObservable()">Start Observable</button>
+
+<router-outlet></router-outlet>
